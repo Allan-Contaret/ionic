@@ -1,21 +1,22 @@
 <ion-header>
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-      <ion-title>
-        Connexion
-      </ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Connexion
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
 
 <ion-content class="content" padding>
-
-    <ion-input class="inputs" type="email"  placeholder="Email"></ion-input>
-    <ion-input class="inputs" type="password"  placeholder="Mot de passe"></ion-input>
+  <form #loginForm="ngForm" (ngSubmit)="login()">
+    <ion-input class="inputs" type="email" placeholder="Email"></ion-input>
+    <ion-input class="inputs" type="password" placeholder="Mot de passe"></ion-input>
     <ion-button class="loginButton" href="/list">Se Connecter</ion-button>
-    <div class="test">
+  </form>
+  <div class="test">
     <p>Vous n'êtes pas encore inscrit?</p><a href="/signup">Inscrivez-vous</a>
-    </div>
+  </div>
 
 </ion-content>

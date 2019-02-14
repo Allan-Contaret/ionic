@@ -29,6 +29,11 @@ export class AppComponent {
       title: `S'inscrire`,
       url: '/signup',
       icon: 'person-add'
+    },
+    {
+      title: 'Mon profil',
+      url: '/profile',
+      icon: 'contact'
     }
   ];
 
