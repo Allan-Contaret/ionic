@@ -4,7 +4,7 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      List
+      News
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -15,10 +15,12 @@
       <ion-icon [name]="item.icon" slot="start"></ion-icon>
       {{item.title}}
       <div class="item-note" slot="end">
-        {{item.note}}
+        <button><ion-icon name="create"></ion-icon></button>
+        <button><ion-icon name="trash"></ion-icon></button>
       </div>
     </ion-item>
   </ion-list>
+  <ion-button shape="round">+</ion-button>
   <!--
     <div *ngIf="selectedItem" padding>
       You navigated here from <b>{{selectedItem.title }}</b>
